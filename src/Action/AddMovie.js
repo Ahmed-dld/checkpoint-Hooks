@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import {Modal,Button} from 'react-bootstrap';
 import { Form } from "react-bootstrap";
+import { v4 as uuidv4} from 'uuid';
 
 const AddModal = ({handleClose, show,addNewMovie}) => {
      

@@ -5,11 +5,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './Action/Navbar';
 import Footer from "./Action/Footer";
 import MovieDescription from "./Component/Filter";
+import { v4 as uuidv4} from 'uuid';
+
 
 const App = () => {
   const [movies,setMovies] = useState([
     { 
-      id : list(),
+      id : uuidv4(),
       title:'Spenser Confidential',
       genre:'Thrillers d action,Aventure, drama',
       posteUrl:'https://occ-0-1068-1722.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABfsyjdUpqdBZSnDBBBnas7H67irt7RmGIg8Wp6vgYmsSt8wsh1FwgtntOxFFnxakMu0eulQVxFQ-R7FVHKipMNxOuhh5.jpg?r=9f3',
@@ -18,7 +20,7 @@ const App = () => {
       description: 'Spenser, ex-flic et ex-escroc, sallie avec Hawk, un boxeur rêvant de passer pro, pour dévoiler un sombre complot lié à la mort de deux policiers de Boston.'
     },
     { 
-      id : list(),
+      id : uuidv4(),
       title:'Zone hostile',
       genre:'Action et aventure,fantastique,Cyberpunk' ,  
       posteUrl:'https://www.netflix-news.com/wp-content/uploads/2021/01/zone-hostile-netflix-1280x640.jpg',
@@ -27,7 +29,7 @@ const App = () => {
       description: 'Dans le futur, un pilote de drone est déployé dans une zone militarisée meurtrière où il va travailler pour un officier androïde chargé d empêcher une attaque nucléaire.'
     },
     { 
-      id : list(),
+      id : uuidv4(),
       title:'6 Underground',
       genre:'Action et aventure,Thrillers d action',  
       posteUrl:'https://occ-0-1723-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSpi6zyMFHnndJ5bUEsz_qXxhaBrUZZwEnh0cgx0CCbbdiVlhR9uWS25WgogB6LQGeehyRjOyxtivXsv7Ztpz-IkY_jz8Ct4AS9IeL4WiMT942cgZYZbiIqA97xO2g.jpg?r=074',
@@ -36,7 +38,7 @@ const App = () => {
       description: 'Un milliardaire confie à une équipe d agents internationaux qui ont simulé leur propre mort une mission risquée et sanglante destinée à neutraliser un violent dictateur.'
     },
     { 
-      id : list(),
+      id : uuidv4(),
       title:'Prison Break',
       genre:'Serie américaine :crime, dramatique, policière' ,  
       posteUrl:'https://fr.web.img5.acsta.net/pictures/17/05/22/16/49/588696.jpg',
